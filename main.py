@@ -1,15 +1,27 @@
-# MVC
+# EXEMPLO DE MVC
 
-# VIEW - o que vai para o usuário
-usuario = input("Informe o usuário: ")
-senha = input ("Informe a senha: ")
+def view():
+    '''VIEW - o que vai para o usuário'''
+    usuario = input("Informe o usuário: ")
+    senha = input ("Informe a senha: ")
+    controller(usuario, senha)
 
-# MODEL - o que vem do BD
-usuario_BD = "joao"
-senha_BD = "123"
+def model_usuario():
+    '''MODEL - o que vem do BD'''
+    usuario_BD = "joao"
+    return usuario_BD
 
-# CONTROLER - a validação
-if usuario == usuario_BD and senha == senha_BD:
-    print("pode entrar")
-else:
-    print ("usuário ou senha inválido")
+def model_senha():
+    '''MODEL - o que vem do BD'''
+    senha_BD = "123"
+    return senha_BD
+
+def controller(usuario_digitado, senha_digitado):
+    '''CONTROLLER - a validação'''
+    validacao = usuario_digitado == model_usuario() and senha_digitado == model_senha() 
+    if validacao:
+        print("ACESSO PERMITIDO")
+    else:
+        print ("Usuário ou senha inválido")
+
+view()
