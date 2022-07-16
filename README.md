@@ -1,4 +1,4 @@
-# Clientes Python (SENAC/AM - 2022)
+# Clientes Python (SENAC-AM - 2022)
 
 ## 1º Projeto : Criação de cadastro de clientes
 ---
