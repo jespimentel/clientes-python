@@ -1,4 +1,4 @@
-import validacao
+import controllers.validacao as validacao
 
 def formulario_login():
     '''VIEW - o que vai para o usuário'''
