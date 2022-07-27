@@ -1,4 +1,3 @@
-from socket import J1939_EE_INFO_TX_ABORT
-import controllers.validacao as controller
+import controllers.controllerAplicacao as controllerAplicacao
 
-controller.iniciar()
+controllerAplicacao.iniciar()
